@@ -1,0 +1,29 @@
+[versions]
+kotlin = "2.1.0-RC"
+kotlinx-coroutines = "1.9.0"
+kotlinx-datetime = "0.6.1"
+ndkore = "1.4.5"
+ornament = "1.0.0"
+classcharts = "1.0.0"
+androidx-lifecycle = "2.8.0"
+compose-plugin = "1.7.0"
+compose-rich-editor = "1.0.0-rc09"
+compose-coil = "3.0.0-rc01"
+
+[libraries]
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+ndkore = { module = "dev.nikdekur:ndkore", version.ref = "ndkore" }
+ornament = { module = "dev.nikdekur:ornament", version.ref = "ornament" }
+classcharts-api = { module = "dev.nikdekur:classcharts-api", version.ref = "classcharts" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+compose-rich-editor = { module = "com.mohamedrejeb.richeditor:richeditor-compose", version.ref = "compose-rich-editor" }
+compose-coil = { module = "io.coil-kt.coil3:coil-compose", version.ref = "compose-coil" }
+compose-coil-network-ktor3 = { module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "compose-coil" }
+
+[plugins]
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
